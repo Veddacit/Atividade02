@@ -35,7 +35,6 @@ public class Vendas extends javax.swing.JFrame {
         listaVendidos = new javax.swing.JTable();
         lbl_Titulo = new javax.swing.JLabel();
         btn_voltar = new javax.swing.JButton();
-        Acao = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,13 +61,6 @@ public class Vendas extends javax.swing.JFrame {
             }
         });
 
-        Acao.setText("Acao");
-        Acao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AcaoActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -76,10 +68,7 @@ public class Vendas extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btn_voltar)
-                        .addGap(188, 188, 188)
-                        .addComponent(Acao))
+                    .addComponent(btn_voltar)
                     .addComponent(lbl_Titulo)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18))
@@ -92,9 +81,7 @@ public class Vendas extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_voltar)
-                    .addComponent(Acao))
+                .addComponent(btn_voltar)
                 .addGap(27, 27, 27))
         );
 
@@ -117,11 +104,6 @@ public class Vendas extends javax.swing.JFrame {
     private void btn_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_voltarActionPerformed
 dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_btn_voltarActionPerformed
-
-    private void AcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AcaoActionPerformed
-    listarProdutos();
-   
-    }//GEN-LAST:event_AcaoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,7 +141,6 @@ dispose();        // TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Acao;
     private javax.swing.JButton btn_voltar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
