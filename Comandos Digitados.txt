@@ -1,5 +1,3 @@
 Comandos por Ordem cronológica:
-git init
-git add
-git remote add origin
-git branch -m master
+git push
+git Commit -m""
